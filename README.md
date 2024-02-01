@@ -1,5 +1,19 @@
 # Turkish-Movie-Classification-with-Neural-Networks
 
+## Table of Contents
+
+- [About the project](#about-the-project)
+- [About the dataset](#about-the-dataset)
+- [Collecting the Data](#collecting-the-data)
+- [Usage](#usage)
+- [How did I transcribe movies?](#how-did-i-transcribe-movies?)
+- [How did I handle such a big text dataset?](#how-did-i-handle-such-a-big-text-dataset?)
+- [Data Cleaning](#data-cleaning)
+- [Model Training in Tensorflow](#model-training-in-tensorflow)
+- [Scikit-Learn Models](#scikit-learn-models)
+- [PreTrained HuggingFace BERT Model in PyTorch](#preTrained-huggingFace-bert-model-in-pyTorch)
+
+
 ## About the project:
 The goal of the project is showing my Deep Learning skills and brighten my skills in Natural Language Processing. Turkish movies and serials are well-known worldwide, so I wanted to work on Turkish movies, also there are not many projects on Turkish language out here.
 
@@ -21,6 +35,13 @@ I used [pytube](https://pypi.org/project/pytube/) to download videos as .mp3 fil
 * I modified `yt\Lib\site-packages\pytube\innertube.py` file's 223th line from `def __init__(self, client='ANDROID_MUSIC', use_oauth=False, allow_cache=True):` to `def __init__(self, client='ANDROID', use_oauth=False, allow_cache=True):`
 
 [Original Code](https://stackoverflow.com/a/76780768/21653250)
+
+## Usage
+```bash
+git clone https://github.com/g-hano/Turkish-Movie-Classification-with-Neural-Networks.git
+cd Turkish-Movie-Classification-with-Neural-Networks
+pip install -r requirements.txt
+```
 
 ## How did I transcribe movies?
 
@@ -209,6 +230,8 @@ Since the first model overfit, I may need to reduce the power of the model and c
 
 Deep Neural Network models overfit, maybe I can try Scikit-Learn models. Let's give it a shot!
 
+## Scikit-Learn Models
+
 ```python
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
@@ -336,6 +359,8 @@ report = classification_report(y_test, pred)
 print("Accuracy:", accuracy)
 print("Classification Report:\n", report)
 ```
+
+## PreTrained HuggingFace BERT Model in PyTorch
 
 lastly, I want to use "dbmdz/bert-base-turkish-128k-uncased" model from huggingface, in this case I will need PyTorch
 
