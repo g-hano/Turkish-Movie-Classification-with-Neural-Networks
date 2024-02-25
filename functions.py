@@ -20,7 +20,7 @@ def contains_non_turkish(word: str) -> bool:
             return False
     return True
     
-def remove_words_without_non_turkish(text: str) -> str:
+def remove_non_turkish(text: str) -> str:
     """
     Removes the word if it contains any non-Turkish character.
     """
