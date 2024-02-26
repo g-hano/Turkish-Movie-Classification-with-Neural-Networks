@@ -30,9 +30,6 @@ I got an api key from youtube
 I extracted every video's url and title by using api
 
 I used [pytube](https://pypi.org/project/pytube/) to download videos as .mp3 files,
-* I modified 'yt\Lib\site-packages\pytube\streams.py' file's 311th line, I added
-  `if not os.path.exists(file_path):` to handle the case where we do not have file_path exists*
-* I modified `yt\Lib\site-packages\pytube\innertube.py` file's 223th line from `def __init__(self, client='ANDROID_MUSIC', use_oauth=False, allow_cache=True):` to `def __init__(self, client='ANDROID', use_oauth=False, allow_cache=True):`
 
 [Original Code](https://stackoverflow.com/a/76780768/21653250)
 
