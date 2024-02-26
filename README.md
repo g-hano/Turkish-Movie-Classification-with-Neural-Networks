@@ -17,7 +17,7 @@
 ## About the project:
 The goal of the project is showing my Deep Learning skills and brighten my skills in Natural Language Processing. Turkish movies and serials are well-known worldwide, so I wanted to work on Turkish movies, also there are not many projects on Turkish language out here.
 
-I collected, cleaned and processed the dataset in order to train big variety of models from most popular Machine Learning - Deep Learning libraries such as Tensorflow, Keras, PyTorch and Scikit-Learn. Also finetuned a pretrained model from HuggingFace. If you want to reach out to me, here is my [LinkedIn](www.linkedin.com/in/chanyalcin).
+I collected, cleaned and processed the dataset in order to train big variety of models from most popular Machine Learning - Deep Learning libraries such as Tensorflow, Keras, PyTorch and Scikit-Learn. Also finetuned a pretrained model from HuggingFace. If you want to reach out to me, here is my LinkedIn (www.linkedin.com/in/chanyalcin).
 
 ## About the dataset:
 I self collected everything in this dataset, first I choosed the movie types I want to work on, then found 
